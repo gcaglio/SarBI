@@ -1,0 +1,34 @@
+ =================================================================
+ ==  NOTICE file for use with the Apache License, Version 2.0,  ==
+ =================================================================
+
+ ProxyBI - proxy software to read files on remote unix hosts
+           (reachable only in SSH) as they were local files
+           available in HTTP on localhost.
+
+ In this way you can "connect" your Excel worksheet or PowerBI 
+ document to a remote CSV file (for example) simply using the
+ HTTP protocol, with a URL like this :
+
+
+ http://127.0.0.1:18080/ssh::host::username::password/getFile/_filepath_
+
+ or like this 
+
+ http://127.0.0.1:18080/ssh::host::username::path-to-your-private-key/getFile/_filepath_
+
+
+ This enables PowerBI to access SARBI files (for example) on any remote
+ hosts without having to copy them locally or share them in any way
+
+
+ DEPENDENCIES : please note that this project has depends from SSH.NET library. 
+ You could download it from CodePlex at : https://sshnet.codeplex.com/
+ Unfortunately I couldn't include this component 'cause i'm releasing my
+ ProxyBI tool under a different license.
+
+
+ ------------------------------------------------------------------
+
+ Copyright 2016 Caglio Giuliano
+
